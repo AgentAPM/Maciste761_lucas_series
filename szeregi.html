@@ -1,0 +1,57 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="AgentAPM">
+    <title>Sum-recursive series</title>
+    <link rel="stylesheet" href="szeregi.css">
+    <script defer src="szeregi.js"></script>
+</head>
+<body>
+    <div id="main-wrapper">
+        <h1 class="centered">Sum-recursive series</h1>
+        <section>
+            <h2>1. Set number of head parameters.</h2>
+            <input id="param-no" type="number" value="2">
+            <button id="param-btn">Submit</button>
+        </section>
+        <section>
+            <h2>2. Set values of head parameters.</h2>
+            <div id="input-wrapper">
+                <span class="vstack" id="input-template">
+                    <label>n0</label>
+                    <input id="param" type="number">
+                </span>
+            </div>
+        </section>
+        <section>
+            <h2>3. Generate series</h2>
+            <input id="generate-no" value="10">
+            <button id="generate-btn">Generate</button>
+            <table id="result-wrapper">
+                <tr id="result-template" class="result-item">
+                    <td id="index">0</td>
+                    <td id="value">0</td>
+                </tr>
+            </table>
+        </section>
+    </div>
+    <div id="gui-wrapper">
+        <section>
+            <h2>1. Set number of head parameters.</h2>
+            <input id="param-no2" type="number" value="2">
+            <button id="param-btn2">Ustaw</button>
+        </section>
+        <section>
+            <h2>2. Set length of graph.</h2>
+            <input id="generate-len" value="10">
+            <button id="generate-sav">Zapisz</button>
+        </section>
+        <section>
+            <h2>3. Explore the graph.</h2>
+            <div id="graph"></div>
+        </section>
+    </div>
+</body>
+</html>
